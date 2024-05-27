@@ -4,8 +4,9 @@ import './App.css';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import About from './components/About';
-import Urunler from './components/Urunler';
+import Product from './components/Product';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
       <Route path="/" element={<Home />}/>
       <Route path="/contact" element={<Contact />}/>
       <Route path="/about" element={<About />}/>
-      <Route path="/products" element={<Urunler />}/>
+      <Route path="/products" element={<Product />}/>
      </Routes>
+     <Footer />
     </div>
   );
 }
